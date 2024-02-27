@@ -12,6 +12,7 @@ from scipy import optimize
 from scipy.stats import norm, beta, gamma
 import matplotlib.pyplot as plt
 import seaborn as sns
+from tqdm import tqdm 
 
 def softmax(beta:float,V:np.ndarray) -> np.ndarray:
 	"""Softmax choice rule.
@@ -269,5 +270,4 @@ ax.set(xlabel="Trial", ylabel="P(Choose Square)", ylim=(.5,1))
 ax.legend(loc='lower right', prop={"size":20})
 # plt.show()
 fig.savefig("figs/rl_fit_demo/predictive_check.png", dpi=300)
-
 

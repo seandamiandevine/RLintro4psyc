@@ -301,3 +301,5 @@ ax.set(xlabel=r"$\theta$", ylabel="Negative Log-Likelihood", xticks=[])
 # plt.show()
 fig.savefig('figs/slide83.png', dpi=300)
 
+## Slide 89 
+alpha = 
